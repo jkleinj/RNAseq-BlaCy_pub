@@ -1,0 +1,13 @@
+TopHat v2.1.1 (with option --no-coverage-search)
+featureCounts v1.5.1
+
+R version 3.4.1 (2017-06-30)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 16.04.2 LTS
+
+org.Hs.eg.db_3.4.1
+
+SCnorm_0.99.2
+RUVSeq_1.10.0
+scLVM_0.99.2
+
