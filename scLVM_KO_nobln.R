@@ -18,7 +18,7 @@ source("gene_name_ID.R");
 
 #_______________________________________________________________________________
 ## load data
-dataHs.raw = read.table("RUV.bln.counts", header = TRUE);
+dataHs.raw = read.table("genali.scnorm", header = TRUE);
 
 gene_names = AnnotationDbi::select(org.Hs.eg.db, keys = rownames(dataHs.raw), columns = c("SYMBOL"), keytype="ENSEMBL");
 ## remove multiple mappings
@@ -107,7 +107,7 @@ write.table(variance, "PCA_variance.dat");
 
 #_______________________________________________________________________________
 ## plot1
-pdf("PCA_KO_1.pdf");
+pdf("PCA_KO_nobln_1.pdf");
 ggplot(as.data.frame(cbind(Y.pca$x[ , 1], Y.pca$x[ , 2])),
 	   aes(x = V1, y = V2,
 			colour = cell.types, shape = embryo.types)) +
@@ -124,7 +124,7 @@ dev.off();
 
 #_______________________________________________________________________________
 ## plot2, with sample labels
-pdf("PCA_KO_2.pdf");
+pdf("PCA_KO_nobln_2.pdf");
 ggplot(as.data.frame(cbind(Y.pca$x[ , 1], Y.pca$x[ , 2])),
 	   aes(x = V1, y = V2,
 			colour = cell.types, shape = embryo.types, label = sample.types)) +
@@ -142,7 +142,7 @@ dev.off();
 
 #_______________________________________________________________________________
 ## plot3, with cellID labels
-pdf("PCA_KO_3.pdf");
+pdf("PCA_KO_nobln_3.pdf");
 ggplot(as.data.frame(cbind(Y.pca$x[ , 1], Y.pca$x[ , 2])),
 	   aes(x = V1, y = V2,
 			colour = cell.types, shape = embryo.types, label = cellID.types)) +
@@ -176,7 +176,7 @@ mappingRates.types = unlist(sapply(rownames(Y), function(x) {
 
 #_______________________________________________________________________________
 ## plot4, with read-depth labels
-pdf("PCA_KO_4.pdf");
+pdf("PCA_KO_nobln_4.pdf");
 ggplot(as.data.frame(cbind(Y.pca$x[ , 1], Y.pca$x[ , 2])),
 	   aes(x = V1, y = V2,
 			colour = cell.types, shape = embryo.types, label = readCounts.types)) +
@@ -194,7 +194,7 @@ dev.off();
 
 #_______________________________________________________________________________
 ## plot5, with alignment rate labels
-pdf("PCA_KO_5.pdf");
+pdf("PCA_KO_nobln_5.pdf");
 ggplot(as.data.frame(cbind(Y.pca$x[ , 1], Y.pca$x[ , 2])),
 	   aes(x = V1, y = V2,
 			colour = cell.types, shape = embryo.types, label = mappingRates.types)) +
