@@ -38,3 +38,20 @@
 * program_versions.txt
 : list of programs and their versions used to process the data
 
+* deseq_KO_vs_uninjected_control_1.csv:
+: gene list for subsetting
+
+* RUVSeq.R
+: between-lane normalisation using the RUVSeq package
+
+* gene_name_ID.R
+: program to match gene names and IDss
+
+* qual.R
+: quality filter for genes and cells (samples)
+
+* scLVM_KO.R
+: subsetting of genes to the padj<1e-2 part of deseq_KO_vs_uninjected_control_1.csv
+
+* scnorm.R
+: within-sample normalisation using the SCnorm package
