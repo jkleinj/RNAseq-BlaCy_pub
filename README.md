@@ -39,6 +39,9 @@ standing for 'between lane normalisation' or 'no between lane normalisation'.
 * PCA_KO_*_5.pdf
 : same plot labelled with genome mapping rate in per-cent format
 
+* PCA_gene_list.dat
+: gene list used for sub-setting transcript count data to compute PCA plot
+
 * program_versions.txt
 : list of programs and their versions used to process the data
 
