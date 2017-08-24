@@ -9,5 +9,4 @@ org.Hs.eg.db_3.4.1
 
 SCnorm_0.99.2
 RUVSeq_1.10.0
-scLVM_0.99.2
 
