@@ -17,10 +17,11 @@ standing for 'between lane normalisation' or 'no between lane normalisation'.
 	using the 'full' quantile regression
 
 * samples_meta.dat
-: sample meta data
+: sample meta data containing the columns
+"sample_ID", "cell_ID", "cell_type", "smp_ID", "CRISPR", "embryo", "library_ID", "alt_cell_ID", "read_counts", "mapping_rate". "read_counts" is the total number of trancscript counts per cell, also referred to as 'sequencing depth'.
 
 * PCA_gene_list.dat
-: gene list to subset transcript count data for PCA
+: gene list used for sub-setting transcript count data to compute PCA plot
 
 * PCA_KO_*_1.pdf
 : PCA of 'RUV.bln.counts' after subsetting to above gene list
@@ -38,9 +39,6 @@ standing for 'between lane normalisation' or 'no between lane normalisation'.
 
 * PCA_KO_*_5.pdf
 : same plot labelled with genome mapping rate in per-cent format
-
-* PCA_gene_list.dat
-: gene list used for sub-setting transcript count data to compute PCA plot
 
 * program_versions.txt
 : list of programs and their versions used to process the data
