@@ -16,7 +16,7 @@ standing for 'between lane normalisation' or 'no between lane normalisation'.
 : transcript count data after RUVSeq between-lane normalisation
 	using the 'full' quantile regression
 
-* samples_meta.dat
+* SupplementaryTable2_samples_meta.[csv,dat]
 : sample meta data containing the columns
 "sample_ID", "cell_ID", "cell_type", "smp_ID", "CRISPR", "embryo", "library_ID", "alt_cell_ID", "read_counts", "mapping_rate". "read_counts" is the total number of trancscript counts per cell, also referred to as 'sequencing depth'.
 
@@ -60,3 +60,9 @@ standing for 'between lane normalisation' or 'no between lane normalisation'.
 
 * scnorm.R
 : within-sample normalisation using the SCnorm package
+
+* heatmap_nature2017.r
+: heatmap script
+
+* pca_nature2017.r
+: PCA script
